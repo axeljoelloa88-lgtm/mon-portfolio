@@ -1,0 +1,137 @@
+/* ----- RESET ----- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* ----- MENU ----- */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #3498db;
+}
+
+.space-menu {
+    height: 80px;
+}
+
+/* ----- BOX PRINCIPALE ----- */
+.content-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+/* ----- TITRE ----- */
+.title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.underline {
+    width: 100px;
+    height: 4px;
+    background: #3498db;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* ----- COMPÉTENCES ----- */
+.competence-container {
+    margin-bottom: 2rem;
+}
+
+.competence-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+/* Barre */
+.progress-bar {
+    height: 12px;
+    background: #ecf0f1;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 1s ease-in-out;
+}
+
+/* ----- Couleurs + Pourcentages ----- */
+.p-html {
+    width: 40%;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.p-cisco {
+    width: 45%;
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+.p-cloud {
+    width: 10%;
+    background: linear-gradient(90deg, #9b59b6, #8e44ad);
+}
+
+.p-linux {
+    width: 14%;
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 1.9rem;
+    }
+
+    .content-box {
+        padding: 1rem;
+    }
+}
